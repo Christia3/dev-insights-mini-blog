@@ -8,8 +8,14 @@ function App() {
       <Header />
 
       <main>
-        <section>
+        <section
+          style={{
+            textAlign: "center",
+            padding: "50px 20px 30px",
+          }}
+        >
           <h2>Welcome to Dev Insights</h2>
+
           <p>
             A place for developers to share quick tips, insights, and updates.
           </p>

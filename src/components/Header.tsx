@@ -1,15 +1,18 @@
+import "./Header.css";
+import withLogger from "../hoc/withLogger";
+
 function Header() {
   return (
-    <header>
-      <div>
-        <h1>Dev Insights</h1>
-      </div>
+    <header className="header">
+      <h1 className="logo">Dev Insights</h1>
 
       <nav>
-        <a href="#new-post">New Post</a>
+        <a className="nav-link" href="#new-post">
+          New Post
+        </a>
       </nav>
     </header>
   );
 }
 
-export default Header;
+export default withLogger(Header, "Header");

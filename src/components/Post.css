@@ -1,0 +1,32 @@
+.post {
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.post h3 {
+  margin-top: 0;
+  color: #1e293b;
+}
+
+.post-author {
+  color: #475569;
+  font-size: 14px;
+}
+
+.post-content {
+  line-height: 1.6;
+  color: #334155;
+}
+
+.post-date {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.highlighted-post {
+  border-left: 5px solid #2563eb;
+  background-color: #eff6ff;
+}

@@ -1,23 +1,27 @@
+import { memo } from "react";
 import type { Post as PostType } from "../types/Post";
+import "./Post.css";
 
 interface PostProps {
   post: PostType;
 }
 
 function Post({ post }: PostProps) {
-  return (
-    <article>
-      <h2>{post.title}</h2>
+  const isHighlighted = post.author === "Alice";
 
-      <p>
+  return (
+    <article className={`post ${isHighlighted ? "highlighted-post" : ""}`}>
+      <h3>{post.title}</h3>
+
+      <p className="post-author">
         <strong>By:</strong> {post.author}
       </p>
 
-      <p>{post.content}</p>
+      <p className="post-content">{post.content}</p>
 
-      <small>{post.date}</small>
+      <small className="post-date">{post.date}</small>
     </article>
   );
 }
 
-export default Post;
+export default memo(Post);

@@ -1,5 +1,6 @@
 import Post from "./Post";
 import type { Post as PostType } from "../types/Post";
+import "./PostList.css";
 
 function PostList() {
   const posts: PostType[] = [
@@ -30,8 +31,8 @@ function PostList() {
   ];
 
   return (
-    <section>
-      <h2>Latest Posts</h2>
+    <section className="post-list">
+      <h2 className="post-list-title">Latest Posts</h2>
 
       {posts.map((post) => (
         <Post key={post.id} post={post} />
