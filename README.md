@@ -121,3 +121,4 @@ Clone the project from GitHub:
 git clone https://github.com/Christia3/dev-insights-mini-blog.git
 cd dev-insights-mini-blog
 npm install
+npm run dev
