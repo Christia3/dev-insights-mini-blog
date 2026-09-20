@@ -17,7 +17,9 @@ function Post({ post }: PostProps) {
         <strong>By:</strong> {post.author}
       </p>
 
-      <p className="post-content">{post.content}</p>
+      <p className="post-content">
+        {post.content.split(" ").slice(0, 10).join(" ")}...
+      </p>
 
       <small className="post-date">{post.date}</small>
     </article>
