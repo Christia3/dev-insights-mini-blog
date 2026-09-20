@@ -102,3 +102,22 @@ dev-insights-mini-blog/
 ├── tsconfig.node.json
 ├── vite.config.ts
 └── README.md
+
+## Installation
+
+### Prerequisites
+
+Before installing the project, make sure you have the following installed on your computer:
+
+- [Node.js](https://nodejs.org/)
+- npm (included with Node.js)
+- Git
+
+### 1. Clone the Repository
+
+Clone the project from GitHub:
+
+```bash
+git clone https://github.com/Christia3/dev-insights-mini-blog.git
+cd dev-insights-mini-blog
+npm install
